@@ -28,3 +28,35 @@
 - Because of hoisting, var can be accessed before declarations, unlike let and const
 - Unlike var, let and const do not allow re-declaration
 - Use let for variables that need to be mutable within a block
+
+### Task 6
+- Template literals in ES6 are enclosed by backticks (`) instead of single (') or double (") quotes, and provide a way to embed expressions, create multi-line strings, and work with tagged templates
+- Template literals allow you to embed variables and expressions directly within strings using ${}.
+```javascript
+const name = 'Alice';
+const age = 25;
+const greeting = `Hello, my name is ${name} and I am ${age} years old.`;
+
+console.log(greeting); // Output: Hello, my name is Alice and I am 25 years old.
+```
+- They help create multi-line strings without needing to use newline characters (\n) or concatenation.
+```javascript
+const message = `This is a multi-line
+string that spans
+across several lines.`;
+
+console.log(message);
+/* Output:
+This is a multi-line
+string that spans
+across several lines.
+*/
+```
+- Template literals allow embedding expressions that are evaluated at runtime. This can include mathematical operations, function calls, or any JavaScript expression
+```javascript
+const a = 10;
+const b = 20;
+const result = `The sum of a and b is ${a + b}.`;
+
+console.log(result); // Output: The sum of a and b is 30.
+```
