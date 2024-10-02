@@ -60,3 +60,19 @@ const result = `The sum of a and b is ${a + b}.`;
 
 console.log(result); // Output: The sum of a and b is 30.
 ```
+
+### Task 7: JavaScript's shorthand syntax for defining object properties
+```javascript
+export default function getBudgetObject(income, gdp, capita) {
+  const budget = {
+    income,
+    gdp,
+    capita,
+  };
+
+  return budget;
+}
+```
+- Using the ES6 object shorthand, the object properties are named after the variables income, gdp, and capita.
+- The object shorthand works by automatically assigning the variable values to the properties with the same names.
+
