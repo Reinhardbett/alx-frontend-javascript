@@ -76,3 +76,6 @@ export default function getBudgetObject(income, gdp, capita) {
 - Using the ES6 object shorthand, the object properties are named after the variables income, gdp, and capita.
 - The object shorthand works by automatically assigning the variable values to the properties with the same names.
 
+### Task 11
+- Computed Property Names: The syntax [departmentName] ensures that the value of the departmentName variable is evaluated and used as the property key.
+- Without the square brackets, JavaScript would treat the key as the literal string "departmentName", instead of using the actual value of the departmentName parameter.
