@@ -79,3 +79,8 @@ export default function getBudgetObject(income, gdp, capita) {
 ### Task 11
 - Computed Property Names: The syntax [departmentName] ensures that the value of the departmentName variable is evaluated and used as the property key.
 - Without the square brackets, JavaScript would treat the key as the literal string "departmentName", instead of using the actual value of the departmentName parameter.
+
+### Task 12
+- Computed property names must hold a value or function.
+- Method shorthand works for direct property names, not computed ones.
+- Use arrow functions or regular functions when assigning functions to computed properties.
