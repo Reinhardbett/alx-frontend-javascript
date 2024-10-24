@@ -34,3 +34,21 @@
   lastName: 'Salva',
 }
 ```
+
+### Task 6
+- Promise.allSettled() is an ES2020 feature that allows you to run multiple promises in parallel and collect the results of all promises, regardless of whether they resolve or reject.
+- Unlike Promise.all(), which fails immediately if any of the promises reject, Promise.allSettled() waits for all promises to complete and provides information about both resolved and rejected promises.
+- For resolved promises:
+```javascript
+{ status: 'fulfilled', value: <resolved value> }
+```
+- For rejected promises:
+```javascript
+{ status: 'rejected', reason: <error reason> }
+```
+- No matter what happens (whether the promises fulfill or reject), Promise.allSettled() never rejects. It resolves with an array that gives the results of all the promises.
+- It is useful when sending multiple HTTP requests and collecting partial results or when handling independent asynchronous tasks where the failure of one task shouldn't stop the others.
+- Promise.all()	Waits for all promises to resolve. If any promise rejects, it rejects the entire operation.
+- Promise.race()	Resolves or rejects as soon as the first promise completes (whether fulfilled or rejected).
+- Promise.allSettled()	Waits for all promises and returns an array with both resolved and rejected results.
+- Promise.any()	Resolves as soon as any one promise fulfills. If all promises reject, it rejects with an AggregateError.
